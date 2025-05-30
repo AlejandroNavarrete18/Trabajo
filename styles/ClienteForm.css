@@ -1,0 +1,77 @@
+/* Estilo general para el formulario */
+.formulario {
+  max-width: 700px;
+  margin: 30px auto;
+  background-color: #1a1a1a; /* Fondo negro suave */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white; /* Texto blanco */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.formulario h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #ffffff;
+  user-select: none;
+}
+
+/* Inputs elegantes: fondo gris oscuro, borde blanco tenue */
+.formulario input {
+  padding: 14px 18px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 1.5px solid #444;
+  background-color: #2a2a2a;
+  color: white;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.formulario input::placeholder {
+  color: #cccccc;
+}
+
+.formulario input:focus {
+  outline: none;
+  border-color: #ffffff;
+  background-color: #333333;
+}
+
+/* Botón estilo elegante: gris claro con hover más oscuro */
+.formulario button {
+  padding: 15px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: #444444;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.35s ease, transform 0.2s ease;
+}
+
+.formulario button:hover {
+  background-color: #555555;
+  transform: translateY(-1px);
+}
+
+/* Quitar estilos de alerta si no se usa */
+.alerta,
+.alerta.exito,
+.alerta.error {
+  display: none;
+}
+
+/* Pantalla completa para desktop */
+body {
+  background-color: #121212;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}

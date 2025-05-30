@@ -1,0 +1,76 @@
+/* Contenedor centrado con gran anchura */
+.lista-clientes {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #1c1c1e; /* Fondo oscuro elegante */
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  color: #f1f1f1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Título */
+.lista-clientes h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+/* Lista como tarjetas horizontales */
+.lista-clientes ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Cada item como fila con datos alineados */
+.lista-clientes li {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr) 160px;
+  gap: 12px;
+  background-color: #2a2a2c;
+  margin-bottom: 15px;
+  padding: 18px 22px;
+  border-left: 6px solid #444; /* Borde decorativo */
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s;
+}
+
+.lista-clientes li:hover {
+  background-color: #333335;
+}
+
+/* Textos dentro de la lista */
+.lista-clientes li span {
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+/* Acciones (botones) */
+.acciones {
+  display: flex;
+  gap: 10px;
+}
+
+/* Botones oscuros elegantes */
+.acciones button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #3c3c3e;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.acciones button:hover {
+  background-color: #505052;
+  transform: scale(1.02);
+}

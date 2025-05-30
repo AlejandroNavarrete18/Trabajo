@@ -1,0 +1,19 @@
+/* Fondo general y estilo de página */
+.container {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f0f0; /* Gris claro suave */
+  min-height: 100vh;
+  padding: 40px 60px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente el contenido */
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333333; /* Gris oscuro para mejor contraste */
+  margin-bottom: 40px;
+}
